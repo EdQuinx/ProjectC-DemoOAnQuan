@@ -9,6 +9,6 @@ struct RenderWindow {
     void (*CleanUp) (RenderWindow *);
 };
 
-static RenderWindow RenderWindowInit(void);
-static void RenderWindow_Create(RenderWindow* self, const char* title, int width, int height);
-static void RenderWindow_CleanUp(RenderWindow* self);
+RenderWindow RenderWindowInit(void);
+void RenderWindow_Create(RenderWindow* self, const char* title, int width, int height);
+void RenderWindow_CleanUp(RenderWindow* self);
