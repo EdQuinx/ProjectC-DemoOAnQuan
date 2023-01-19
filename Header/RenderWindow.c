@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "RenderWindow.h"
 
 RenderWindow RenderWindowInit() {
