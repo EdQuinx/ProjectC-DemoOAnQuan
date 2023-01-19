@@ -4,7 +4,8 @@
 RenderWindow RenderWindowInit() {
     RenderWindow renderWindow;
     renderWindow.Create = &RenderWindow_Create;
-
+    renderWindow.CleanUp = &RenderWindow_CleanUp;
+    
     return renderWindow;
 }
 
