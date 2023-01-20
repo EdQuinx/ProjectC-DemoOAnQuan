@@ -1,4 +1,3 @@
-#include <iostream>
 #include <stdbool.h>
 #include "Header/RenderWindow.c"
 #include "Header/GFX.h"
