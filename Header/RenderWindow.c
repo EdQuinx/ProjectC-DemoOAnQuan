@@ -38,7 +38,7 @@ void RenderWindow_Create(RenderWindow* self, const char* title, int width, int h
         printf("Could not create window: %s\n", SDL_GetError());
     }
 
-    self->renderer = SDL_CreateRenderer(self->window, -1, SDL_RENDERER_ACCELERATED);
+    self->renderer = SDL_CreateRenderer(self->window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 }
 
 void RenderWindow_Clear(RenderWindow* self) {

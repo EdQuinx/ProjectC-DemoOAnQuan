@@ -20,6 +20,7 @@ int main(int argc, char* argv[]) {
         if (SDL_PollEvent(&event)) {
             if (event.type == SDL_QUIT)
                 break;
+            cursor.Animate(&cursor, event);
         }
         renderWindow.Clear(&renderWindow);
         renderWindow.Render(&renderWindow, background, NULL, NULL);
